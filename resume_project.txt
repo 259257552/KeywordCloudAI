@@ -1,0 +1,4 @@
+项目：KeywordCloudAI
+描述：开发 AI 关键词云可视化平台，实现中文关键词提取与词云生成，支持多种配色方案并导出图片，用于文本分析与可视化呈现。
+技术栈：Python, NLP, WordCloud
+GitHub：https://github.com/你的GitHub用户名/KeywordCloudAI
