@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>智能关键词云与语义分析平台</title>
+</head>
+<body>
+<h2>智能关键词云与语义分析平台</h2>
+
+<form method="post">
+    <textarea name="text" rows="10" cols="80" placeholder="请输入文本"></textarea><br><br>
+
+   颜色风格：
+<select name="color">
+    <option value="Greys">黑色</option>
+    <option value="Blues">蓝色</option>
+    <option value="Reds">红色</option>
+    <option value="Greens">绿色</option>
+</select>
+
+
+    字体：
+    <select name="font">
+        <option value="simhei.ttf">黑体</option>
+        <option value="simkai.ttf">楷体</option>
+    </select>
+
+    形状：
+    <select name="shape">
+        <option value="rectangle">矩形</option>
+        <option value="circle">圆形</option>
+    </select>
+
+    <br><br>
+    <button type="submit">生成关键词云</button>
+</form>
+
+{% if cloud %}
+    <h3>分析结果：</h3>
+    <img src="{{ cloud }}"><br><br>
+    <a href="{{ cloud }}" download>下载图片</a>
+{% endif %}
+
+</body>
+</html>
+
